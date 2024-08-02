@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a7dee8f6b1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <title>Decoder</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo__alura" src="/img/img-logo.png">
+        </a>
+    </header>
+
+    <main>
+        <section class="input__text">
+            
+            <textarea class="text__area" id="text__decode" placeholder="Digite seu texto aqui" maxlength="240" autofocus></textarea>
+                <div>
+                    <p class="caption__info"><i class="fa-solid fa-circle-info"></i> Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="buttons">
+                    <button class="encrypt__button" onclick="encrypt()">Criptografar</button>
+                    <button class="decrypt__button" onclick="decrypt()">Descriptografar</button>
+                </div>
+        </section>
+        
+        <aside class="text__result">
+            <div class="empty__state" id="empty__state">
+                <img id="empty__state__aside" src="img\High quality products 1 1.svg">
+                <p class="message__result">Nenhuma mensagem encontrada</p>
+                <p class="message__info">Digite ao lado o texto que você deseja utilizar.</p>
+            </div>
+            <div class="text__decoded hidden" id="text__decoded">
+                <p class="text__decoded__result" id="text__decoded__result"></p>
+            </div>
+            <div class="copy__button__container">
+                <button class="copy__button" id="copyButton" disabled>Copiar</button>
+            </div>
+        </aside>
+
+    </main>
+    <footer>
+        <p class="footer__text">Created by @fgcargnelutti - 2024 ♥</p>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
