@@ -4,7 +4,7 @@ const EMPTY_STATE_ID = 'empty__state';
 const RESULT_TEXT_ID = 'text__decoded__result';
 const COPY_BUTTON_ID = 'copyButton';
 
-// Função para criptografar
+// Função criptografar
 function encrypt() {
     const textArea = document.getElementById(TEXTAREA_ID);
     const text = textArea.value;
@@ -23,7 +23,7 @@ function encrypt() {
     displayResult(encryptedText);
 }
 
-// Função para descriptografar
+// Função descriptografar
 function decrypt() {
     const textArea = document.getElementById(TEXTAREA_ID);
     const text = textArea.value;
