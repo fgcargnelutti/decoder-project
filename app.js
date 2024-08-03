@@ -9,7 +9,7 @@ function encrypt() {
     const textArea = document.getElementById(TEXTAREA_ID);
     const text = textArea.value;
     if (!text) {
-        alert('Insira um texto');
+        alert('Insira um texto.');
         return;
     }
 
@@ -28,7 +28,7 @@ function decrypt() {
     const textArea = document.getElementById(TEXTAREA_ID);
     const text = textArea.value;
     if (!text) {
-        alert('Insira um texto para ser criptografado ou descriptografado.');
+        alert('Insira um texto.');
         return;
     }
 
